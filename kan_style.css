@@ -1,0 +1,35 @@
+﻿hr.border {
+	color: #6391A6;
+	height: 3px;
+	border: 0 none; 
+    background-color: #6391A6;
+}
+
+p {
+	font-size:x-small;
+	margin:0;
+}
+
+p.collapsible {
+	font-size:medium;
+}
+
+div.musumeResult {
+	display:inline-block;
+	margin:0px 12px 12px 0px;
+}
+
+div.musumeResultList {
+	text-align:center;
+}
+
+div.noncollect {
+	filter: alpha(opacity=25);
+	-moz-opacity:0.25;
+	opacity:0.25;
+}
+
+div.menu{
+	display:inline-block;
+	margin-right: 15px;
+}
