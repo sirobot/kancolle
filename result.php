@@ -30,11 +30,12 @@
 	set_include_path(get_include_path() . PATH_SEPARATOR . $path);
 	require_once "Services/ShortURL.php";
 	// 全No
-	define("MUSUNUM",136);
+	define("MUSUNUM",147);
 	// 未実装数
-	define("MUSUMIJISSO",6);
+	define("MUSUMIJISSO",16);
 	// 未実装No
-	$mijissoMusumeList = array('123','128','132','133','134','135',);
+	$mijissoMusumeList = array('123','128','132','133','134','135','137','138','139','140',
+		'141','142','143','144','145','146');
 	// GETで回収
 	$form_musuList = $_GET['m'];
 	// 未実装Noにチェックが入っている場合は削除
@@ -66,7 +67,7 @@
 </div>
 <div data-role="collapsible" data-collapsed-icon="flat-checkround" data-expanded-icon="flat-cross" data-collapsed="false"  data-theme="f">
 
-<h3>所有艦娘一覧</h3>
+<h3>艦娘所有一覧</h3>
 <div class="musuleResultList">
 <?php
 	// 整形

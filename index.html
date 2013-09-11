@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -18,13 +18,13 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	$(".musu").imagepicker({hide_select: true, show_label: true});
-	$('#chkAll').click(function(){
+	$('#chkAll,#chkAll_b').click(function(){
 		$('#mususelect option').each(function() {
 			$(this).attr('selected', 'selected');
 		});
 		$('ul.thumbnails li div.thumbnail').addClass('selected');
 	});
-	$('#chkReset').click(function(){
+	$('#chkReset,#chkReset_b').click(function(){
 		$('#mususelect option').each(function() {
 			$(this).removeAttr('selected');
 		});
@@ -51,7 +51,7 @@ $(document).ready(function(){
 <h3>艦娘一覧</h3>
 <form action="result.php" method="get" data-ajax="false" name="form1">
 <button id="chkAll" data-icon="flat-checkround" data-theme="f" data-inline="true" type="button">すべて選択</button>
-<button id="chkReset"data-icon="flat-cross" data-theme="f" data-inline="true" type="reset">選択リセット</button>
+<button id="chkReset" data-icon="flat-cross" data-theme="f" data-inline="true" type="reset">選択リセット</button>
 <input data-theme="d" data-inline="true" type="submit" value="作成！">
 <select id="mususelect" multiple="multiple" class="musu" data-role="none" name="m[]">
 	<option data-img-src='image/001.jpg' value='001'>戦艦 長門</option>
@@ -190,9 +190,20 @@ $(document).ready(function(){
 	<option data-img-src='image/134.jpg' value='134'>(未実装)</option>
 	<option data-img-src='image/135.jpg' value='135'>(未実装)</option>
 	<option data-img-src='image/136.jpg' value='136'>戦艦 大和改</option>
+	<option data-img-src='image/137.jpg' value='137'>(未実装)</option>
+	<option data-img-src='image/138.jpg' value='138'>(未実装)</option>
+	<option data-img-src='image/139.jpg' value='139'>(未実装)</option>
+	<option data-img-src='image/140.jpg' value='140'>(未実装)</option>
+	<option data-img-src='image/141.jpg' value='141'>(未実装)</option>
+	<option data-img-src='image/142.jpg' value='142'>(未実装)</option>
+	<option data-img-src='image/143.jpg' value='143'>(未実装)</option>
+	<option data-img-src='image/144.jpg' value='144'>(未実装)</option>
+	<option data-img-src='image/145.jpg' value='145'>(未実装)</option>
+	<option data-img-src='image/146.jpg' value='146'>(未実装)</option>
+	<option data-img-src='image/147.jpg' value='147'>駆逐艦 Верный</option>
 </select>
-<button id="chkAll" data-icon="flat-checkround" data-theme="f" data-inline="true" type="button">すべて選択</button>
-<button id="chkReset"data-icon="flat-cross" data-theme="f" data-inline="true" type="reset">選択リセット</button>
+<button id="chkAll_b" data-icon="flat-checkround" data-theme="f" data-inline="true" type="button">すべて選択</button>
+<button id="chkReset_b" data-icon="flat-cross" data-theme="f" data-inline="true" type="reset">選択リセット</button>
 <input data-theme="d" data-inline="true" type="submit" value="作成！">
 </form>
 </div>
