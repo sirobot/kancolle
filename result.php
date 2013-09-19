@@ -32,9 +32,9 @@
 	// 全No
 	define("MUSUNUM",147);
 	// 未実装数
-	define("MUSUMIJISSO",16);
+	define("MUSUMIJISSO",14);
 	// 未実装No
-	$mijissoMusumeList = array('123','128','132','133','134','135','137','138','139','140',
+	$mijissoMusumeList = array('123','128','134','135','137','138','139','140',
 		'141','142','143','144','145','146');
 	// GETで回収
 	$form_musuList = $_GET['m'];
@@ -81,7 +81,7 @@
 	// 出力
 	for($j=1;$j<=MUSUNUM;$j++){
 		echo '<div class="musumeResult ' . $musuList[$j] . '">';
-		echo '<img height="150" src="image/' . str_pad($j,3,"0",STR_PAD_LEFT) .  '.jpg" width="109"></div>';
+		echo '<img src="image/' . str_pad($j,3,"0",STR_PAD_LEFT) .  '.jpg" height="150" width="109"></div>';
 	}
 /*
 <div class="musumeResult"><img alt="戦艦 長門" height="150" src="image/001.jpg" width="109"></div>
