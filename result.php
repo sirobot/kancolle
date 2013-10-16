@@ -32,9 +32,9 @@
 	// 全No
 	define("MUSUNUM",147);
 	// 未実装数
-	define("MUSUMIJISSO",12);
+	define("MUSUMIJISSO",10);
 	// 未実装No
-	$mijissoMusumeList = array('123','128','134','135','137','138','139','140',
+	$mijissoMusumeList = array('123','128','137','138','139','140',
 		'142','143','145','146');
 	// GETで回収
 	$form_musuList = $_GET['m'];
