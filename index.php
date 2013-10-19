@@ -5,7 +5,7 @@
 <meta content="ja" http-equiv="Content-Language">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="canonical" href="http://dunkel.halfmoon.jp/kancolle/" />
 <title>艦娘所有一覧</title>
 
 <link rel="stylesheet" type="text/css" href="flat-ui/jquery.mobile.flatui.css" />

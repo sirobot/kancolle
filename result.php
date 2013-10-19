@@ -50,7 +50,7 @@
 	$obj = Services_ShortURL::factory('TinyURL');
 	$shortUrl = $obj->shorten($originalUrl);
 
-	echo '<a href="index.php" data-role="button" data-theme="f" data-inline="true" data-ajax="false">もう一度作る</a><br />';
+	echo '<a href="http://dunkel.halfmoon.jp/kancolle/" data-role="button" data-theme="f" data-inline="true" data-ajax="false">もう一度作る</a><br />';
 	echo '<div class="menu">';
 	echo '艦娘所有数 ' . count($form_musuList) . '/' . (MUSUNUM-MUSUMIJISSO) . ' (所有率' . floor($collectionRate) . '%)';
 	echo '</div>';
