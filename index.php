@@ -198,7 +198,7 @@ $(document).ready(function(){
 	<option data-img-src='image/142.jpg' value='142'>No.142 (未実装)</option>
 	<option data-img-src='image/143.jpg' value='143'>No.143 (未実装)</option>
 	<option data-img-src='image/144.jpg' value='144'>No.144 駆逐艦 夕立改ニ</option>
-	<option data-img-src='image/145.jpg' value='145'>No.145 (未実装)</option>
+	<option data-img-src='image/145.jpg' value='145'>No.145 駆逐艦 時雨改ニ</option>
 	<option data-img-src='image/146.jpg' value='146'>No.146 (未実装)</option>
 	<option data-img-src='image/147.jpg' value='147'>No.147 駆逐艦 Верный</option>
 </select>
