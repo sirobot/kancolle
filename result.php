@@ -36,7 +36,12 @@
 	// 未実装No
 	$mijissoMusumeList = array('139','140','142','146');
 	// GETで回収
-	$form_musuList = $_GET['m'];
+	if(is_null($_GET['musuList'])){
+		// 既存互換
+		$form_musuList = $_GET['m'];
+	}else{
+		$form_musuList = explode(",",$_GET['musuList']);
+	}
 	// 未実装Noにチェックが入っている場合は削除
 	// 要素ゼロのときはチェックしない
 	if(is_array($form_musuList)){

@@ -17,20 +17,28 @@
 <script src="image-picker/image-picker.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+	// imagePicker初期化
 	$(".musu").imagepicker({hide_select: true, show_label: true});
+	// 全選択
 	$('#chkAll,#chkAll_b').click(function(){
 		$('#mususelect option').each(function() {
 			$(this).attr('selected', 'selected');
 		});
 		$('ul.thumbnails li div.thumbnail').addClass('selected');
 	});
+	// 全選択解除
 	$('#chkReset,#chkReset_b').click(function(){
 		$('#mususelect option').each(function() {
 			$(this).removeAttr('selected');
 		});
 		$('ul.thumbnails li div.thumbnail').removeClass('selected');
 	});
-
+	// フォーム送信データ作成
+	$("form").submit(function(){
+		var formVal = $('#form1 #mususelect').val();
+		$('#form1 #mususelect').val(null);
+		$('#form1 #musuList').val(formVal);
+	});
 });
 </script>
 </head>
@@ -49,7 +57,8 @@ $(document).ready(function(){
 </div>
 <div data-role="collapsible" data-collapsed-icon="flat-checkround" data-expanded-icon="flat-cross" data-collapsed="false"  data-theme="f">
 <h3>艦娘一覧</h3>
-<form action="result.php" method="get" data-ajax="false" name="form1">
+<form action="result.php" method="get" data-ajax="false" name="form1" id="form1">
+<input type="hidden" id="musuList" name="musuList" value="">
 <button id="chkAll" data-icon="flat-checkround" data-theme="f" data-inline="true" type="button">すべて選択</button>
 <button id="chkReset" data-icon="flat-cross" data-theme="f" data-inline="true" type="reset">選択リセット</button>
 <input data-theme="d" data-inline="true" type="submit" value="作成！">
