@@ -30,12 +30,11 @@
 	set_include_path(get_include_path() . PATH_SEPARATOR . $path);
 	require_once "Services/ShortURL.php";
 	// 全No
-	define("MUSUNUM",147);
+	define("MUSUNUM",149);
 	// 未実装数
-	define("MUSUMIJISSO",9);
+	define("MUSUMIJISSO",4);
 	// 未実装No
-	$mijissoMusumeList = array('123','128','137','138','139','140',
-		'142','143','146');
+	$mijissoMusumeList = array('139','140','142','146');
 	// GETで回収
 	$form_musuList = $_GET['m'];
 	// 未実装Noにチェックが入っている場合は削除
@@ -63,6 +62,7 @@
 	echo '<div class="menu">';
 	echo '<a href="http://twitter.com/share" class="twitter-share-button" data-url="' . $shortUrl .'" data-lang="ja" data-text="艦娘所有一覧を作成しました(所有率' . floor($collectionRate) . '%)：">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>';
 	echo '</div>';
+	echo '<div>※ツイートボタンを押しても真っ白な画面が出て呟けない場合、←の短縮URLを手動コピーしてください。(近日中に修正予定)</div>';
 ?>
 </div>
 <div data-role="collapsible" data-collapsed-icon="flat-checkround" data-expanded-icon="flat-cross" data-collapsed="false"  data-theme="f">

@@ -176,12 +176,12 @@ $(document).ready(function(){
 	<option data-img-src='image/120.jpg' value='120'>No.120 重巡洋艦 衣笠</option>
 	<option data-img-src='image/121.jpg' value='121'>No.121 軽空母 千歳航改二</option>
 	<option data-img-src='image/122.jpg' value='122'>No.122 軽空母 千代田航改二</option>
-	<option data-img-src='image/123.jpg' value='123'>No.123 (未実装)</option>
+	<option data-img-src='image/123.jpg' value='123'>No.123 潜水艦 伊19</option>
 	<option data-img-src='image/124.jpg' value='124'>No.124 重巡洋艦 鈴谷</option>
 	<option data-img-src='image/125.jpg' value='125'>No.125 重巡洋艦 熊野</option>
 	<option data-img-src='image/126.jpg' value='126'>No.126 潜水艦 伊168</option>
 	<option data-img-src='image/127.jpg' value='127'>No.127 潜水艦 伊58</option>
-	<option data-img-src='image/128.jpg' value='128'>No.128 (未実装)</option>
+	<option data-img-src='image/128.jpg' value='128'>No.128 潜水艦 伊8</option>
 	<option data-img-src='image/129.jpg' value='129'>No.129 航空巡洋艦 鈴谷改</option>
 	<option data-img-src='image/130.jpg' value='130'>No.130 航空巡洋艦 熊野改</option>
 	<option data-img-src='image/131.jpg' value='131'>No.131 戦艦 大和</option>
@@ -190,17 +190,19 @@ $(document).ready(function(){
 	<option data-img-src='image/134.jpg' value='134'>No.134 駆逐艦 巻雲</option>
 	<option data-img-src='image/135.jpg' value='135'>No.135 駆逐艦 長波</option>
 	<option data-img-src='image/136.jpg' value='136'>No.136 戦艦 大和改</option>
-	<option data-img-src='image/137.jpg' value='137'>No.137 (未実装)</option>
-	<option data-img-src='image/138.jpg' value='138'>No.138 (未実装)</option>
+	<option data-img-src='image/137.jpg' value='137'>No.137 軽巡洋艦 阿賀野</option>
+	<option data-img-src='image/138.jpg' value='138'>No.138 軽巡洋艦 能代</option>
 	<option data-img-src='image/139.jpg' value='139'>No.139 (未実装)</option>
 	<option data-img-src='image/140.jpg' value='140'>No.140 (未実装)</option>
 	<option data-img-src='image/141.jpg' value='141'>No.141 軽巡洋艦 五十鈴改ニ</option>
 	<option data-img-src='image/142.jpg' value='142'>No.142 (未実装)</option>
-	<option data-img-src='image/143.jpg' value='143'>No.143 (未実装)</option>
+	<option data-img-src='image/143.jpg' value='143'>No.143 戦艦 武蔵</option>
 	<option data-img-src='image/144.jpg' value='144'>No.144 駆逐艦 夕立改ニ</option>
 	<option data-img-src='image/145.jpg' value='145'>No.145 駆逐艦 時雨改ニ</option>
 	<option data-img-src='image/146.jpg' value='146'>No.146 (未実装)</option>
 	<option data-img-src='image/147.jpg' value='147'>No.147 駆逐艦 Верный</option>
+	<option data-img-src='image/148.jpg' value='148'>No.148 戦艦 武蔵改</option>
+	<option data-img-src='image/149.jpg' value='149'>No.149 戦艦 金剛改ニ</option>
 </select>
 <button id="chkAll_b" data-icon="flat-checkround" data-theme="f" data-inline="true" type="button">すべて選択</button>
 <button id="chkReset_b" data-icon="flat-cross" data-theme="f" data-inline="true" type="reset">選択リセット</button>
