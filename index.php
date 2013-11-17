@@ -90,6 +90,15 @@ $(document).ready(function(){
 	<p class="collapsible">何か不具合等ありましたらご連絡ください。</p>
 	<p class="collapsible">作成：yuki(siro) Twitter:@siro_xx</p>
 </div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- kancolle -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-1725571372992163"
+     data-ad-slot="2774351136"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 </div>
 </div>
 </body>

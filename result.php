@@ -40,7 +40,11 @@
 		// 既存互換
 		$form_musuList = $_GET['m'];
 	}else{
-		$form_musuList = explode(",",$_GET['musuList']);
+		if($_GET['musuList'] == ""){
+			$form_musuList = null;
+		}else{
+			$form_musuList = explode(",",$_GET['musuList']);
+		}
 	}
 	// 未実装Noにチェックが入っている場合は削除
 	// 要素ゼロのときはチェックしない
@@ -95,6 +99,15 @@
 ?>
 </div>
 </div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- kancolle_result -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:15px"
+     data-ad-client="ca-pub-1725571372992163"
+     data-ad-slot="2634750330"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 </div>
 </div>
 </body>
