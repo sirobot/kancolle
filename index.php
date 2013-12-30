@@ -15,8 +15,18 @@
 <link href="kan_style.css" rel="stylesheet" type="text/css">
 <link href="image-picker/image-picker.css" rel="stylesheet" type="text/css">
 <script src="image-picker/image-picker.min.js" type="text/javascript"></script>
+<script src="plugin/jquery.cookie.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+	// クッキー読み込み
+	var musuListCookie = $.cookie('musuListCookie');
+	if (musuListCookie){
+		var musuListArray = musuListCookie.split(',');
+		$('#mususelect option').filter(function(){
+			return jQuery.inArray($(this).val(),musuListArray) != -1;
+		})
+		.attr('selected', 'selected');
+	}
 	// imagePicker初期化
 	$(".musu").imagepicker({hide_select: true, show_label: true});
 	// 全選択
@@ -38,6 +48,7 @@ $(document).ready(function(){
 		var formVal = $('#form1 #mususelect').val();
 		$('#form1 #mususelect').val(null);
 		$('#form1 #musuList').val(formVal);
+		$.cookie('musuListCookie', formVal, { expires: 14 , path: '/'});
 	});
 });
 </script>
