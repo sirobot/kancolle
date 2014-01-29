@@ -65,6 +65,9 @@ $(document).ready(function(){
 	<p class="collapsible">艦隊これくしょん～艦これ～の艦娘所有一覧ジェネレーターです。</p>
 	<p class="collapsible">持っている艦娘をクリックして選択し、「作成！」ボタンを押すと作成できます。</p>
 	<p class="collapsible">最近のブラウザならだいたい動くと思います。</p>
+	<br />
+	<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
 <div data-role="collapsible" data-collapsed-icon="flat-checkround" data-expanded-icon="flat-cross" data-collapsed="false"  data-theme="f">
 <h3>艦娘一覧</h3>

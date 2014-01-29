@@ -32,9 +32,9 @@
 	// 全No
 	define("MUSUNUM",170);
 	// 未実装数
-	define("MUSUMIJISSO",15);
+	define("MUSUMIJISSO",14);
 	// 未実装No
-	$mijissoMusumeList = array('140','151','152','154','157','158','159','160','162','164','165','167','168','169','170');
+	$mijissoMusumeList = array('140','151','152','154','157','158','159','162','164','165','167','168','169','170');
 	// GETで回収
 	if(is_null($_GET['musuList'])){
 		// 既存互換
@@ -69,9 +69,9 @@
 	echo '</div>';
 	
 	echo '<div class="menu">';
-	echo '<a href="http://twitter.com/share" class="twitter-share-button" data-url="' . $shortUrl .'" data-lang="ja" data-text="艦娘所有一覧を作成しました(所有率' . floor($collectionRate) . '%)：">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>';
+	echo '<a href="https://twitter.com/share" class="twitter-share-button" data-url="' . $shortUrl .'" data-text="艦娘所有一覧を作成しました(所有率' . floor($collectionRate) . '%)：" data-lang="ja" data-size="large" data-count="none">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\'://platform.twitter.com/widgets.js\';fjs.parentNode.insertBefore(js,fjs);}}(document, \'script\', \'twitter-wjs\');</script>';
 	echo '</div>';
-	echo '<div>※ツイートボタンを押しても真っ白な画面が出て呟けない場合、←の短縮URLを手動コピーしてください。(近日中に修正予定)</div>';
 ?>
 </div>
 <div data-role="collapsible" data-collapsed-icon="flat-checkround" data-expanded-icon="flat-cross" data-collapsed="false"  data-theme="f">
