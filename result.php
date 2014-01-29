@@ -32,9 +32,9 @@
 	// 全No
 	define("MUSUNUM",170);
 	// 未実装数
-	define("MUSUMIJISSO",14);
+	define("MUSUMIJISSO",12);
 	// 未実装No
-	$mijissoMusumeList = array('140','151','152','154','157','158','159','162','164','165','167','168','169','170');
+	$mijissoMusumeList = array('140','151','152','154','157','158','159','162','167','168','169','170');
 	// GETで回収
 	if(is_null($_GET['musuList'])){
 		// 既存互換
