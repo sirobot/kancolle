@@ -30,11 +30,11 @@
 	set_include_path(get_include_path() . PATH_SEPARATOR . $path);
 	require_once "Services/ShortURL.php";
 	// 全No
-	define("MUSUNUM",180);
+	define("MUSUNUM",190);
 	// 未実装数
-	define("MUSUMIJISSO",17);
+	define("MUSUMIJISSO",15);
 	// 未実装No
-	$mijissoMusumeList = array('140','151','152','154','157','158','162','167','168','169','170','173','176','177','178','179','180',);
+	$mijissoMusumeList = array('151','154','157','158','162','167','168','176','177','178','183','184','185','186','190',);
 	// GETで回収
 	if(is_null($_GET['musuList'])){
 		// 既存互換
@@ -59,18 +59,12 @@
 	$shortUrl = $obj->shorten($originalUrl);
 
 	echo '<a href="http://dunkel.halfmoon.jp/kancolle/" data-role="button" data-theme="f" data-inline="true" data-ajax="false">もう一度作る</a><br />';
-	echo '<div class="menu">';
+	echo '<div>';
 	echo '艦娘所有数 ' . count($form_musuList) . '/' . (MUSUNUM-MUSUMIJISSO) . ' (所有率' . floor($collectionRate) . '%)';
 	echo '</div>';
-	echo '<div class="menu">共有URL：</div>';
 	echo '<div class="menu">';
-	echo '<label for="url" class="ui-hidden-accessible">URL</label>';
-	echo '<input type="text" name="name" id="url" value="' . $shortUrl .'" data-theme="f"/>';
-	echo '</div>';
-	
-	echo '<div class="menu">';
-	echo '<a href="https://twitter.com/share" class="twitter-share-button" data-url="' . $shortUrl .'" data-text="艦娘所有一覧を作成しました(所有率' . floor($collectionRate) . '%)：" data-lang="ja" data-size="large" data-count="none">ツイート</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\'://platform.twitter.com/widgets.js\';fjs.parentNode.insertBefore(js,fjs);}}(document, \'script\', \'twitter-wjs\');</script>';
+	echo '<label for="textarea-a">共有用(コピー＆ペーストでご利用ください)：</label>';
+	echo '<textarea name="textarea" id="textarea-a">艦娘所有一覧を作成しました(所有率' . floor($collectionRate) . '%)：' . $shortUrl . '</textarea>';
 	echo '</div>';
 ?>
 </div>
