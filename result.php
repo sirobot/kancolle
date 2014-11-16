@@ -30,11 +30,11 @@
 	set_include_path(get_include_path() . PATH_SEPARATOR . $path);
 	require_once "Services/ShortURL.php";
 	// 全No
-	define("MUSUNUM",220);
+	define("MUSUNUM",230);
 	// 未実装数
-	define("MUSUMIJISSO",21);
+	define("MUSUMIJISSO",25);
 	// 未実装No
-	$mijissoMusumeList = array('154','162','176','177','192','193','198','199','200','202','203','207','212','213','214','215','216','217','218','219','220');
+	$mijissoMusumeList = array('154','162','192','193','198','199','200','202','203','212','214','216','217','218','219','220','222','223','224','225','226','227','228','229','230');
 	// GETで回収
 	if(is_null($_GET['musuList'])){
 		// 既存互換
