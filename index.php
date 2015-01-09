@@ -102,7 +102,7 @@ $(document).ready(function(){
 <div data-role="collapsible" data-collapsed-icon="flat-menu" data-expanded-icon="flat-cross" data-collapsed="true"  data-theme="f">
 	<h3>他</h3>
 	<p class="collapsible">何か不具合等ありましたらご連絡ください。</p>
-	<p class="collapsible">作成：yuki(siro) Twitter:@siro_xx</p>
+	<p class="collapsible">作成：siro Twitter:@siro_xx</p>
 </div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- kancolle -->
