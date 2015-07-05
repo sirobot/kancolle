@@ -29,10 +29,27 @@ div.noncollect {
 	opacity:0.25;
 }
 
+div.unimpl {
+	filter: alpha(opacity=50);
+	-moz-opacity:0.50;
+	opacity:0.50;
+}
+
 div.menu{
 	display:inline-block;
 	width:20%;
 	min-width:200px;
 	max-width:500px;
 	margin-top:10px;
+}
+
+::selection    {
+    background: #9B8884;
+    color:#fff;
+}
+ 
+/*Firefoxに対応*/
+::-moz-selection     {
+    background: #9B8884;
+    color:#fff;
 }
